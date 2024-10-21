@@ -1,0 +1,78 @@
+/* Contenedor general */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido */
+    justify-content: center;
+    height: 100vh; /* Hacer que el contenedor ocupe toda la pantalla */
+  }
+  
+  /* Imagen del logo de Angular */
+  .angular-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px; /* Separación del título */
+    animation: bounce 2s infinite;
+  }  
+  
+  /* Título */
+  .title {
+    font-size: 3.5rem;
+    color: #4C0000; /* Rojo oscuro */
+    margin-bottom: 30px;
+    animation: bounce 2s infinite; /* Añadir animación de rebote */
+  }
+  
+  /* Contenedor de botones */
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Botones */
+  .home-button {
+    background-color: #8B0000; /* Rojo vino */
+    color: #FAF3E0; /* Blanco roto */
+    padding: 25px 50px; /* Aumentar tamaño de los botones */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5rem; /* Aumentar tamaño de la letra */
+    width: 300px; /* Hacer todos los botones del mismo ancho */
+    height: 80px; /* Hacer todos los botones del mismo alto */
+    transition: background-color 0.3s;
+    display: flex; /* Para centrar el texto */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
+  }
+  
+  /* Efecto hover en los botones */
+  .home-button:hover {
+    background-color: #5C0000; /* Rojo más oscuro al hacer hover */
+  }
+  
+  /* Animación de rebote */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Posición inicial */
+    }
+    50% {
+      transform: translateY(-10px); /* Rebote hacia arriba */
+    }
+  }
+  
+  /* Estilo responsivo */
+  @media (max-width: 600px) {
+    .home-button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      width: 250px;
+      height: 60px;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  }
+  

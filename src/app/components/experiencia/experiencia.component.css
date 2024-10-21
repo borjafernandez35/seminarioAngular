@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FAF3E0; /* Blanco roto para el fondo */
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  justify-content: center; /* Centrar ambos elementos */
+  align-items: flex-start;
+  gap: 20px; /* Reducir el espacio entre el formulario y la lista */
+  width: 90%;
+  margin: 10px auto;
+}
+
+/* Contenedor del formulario */
+.experiencia-form {
+  background-color: #8B0000; /* Rojo vino para el fondo */
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  width: 35%;
+  text-align: center;
+  margin-right: -10px; /* Ajuste de margen para juntar más los elementos */
+}
+
+/* Título */
+h2 {
+  color: #FAF3E0; /* Blanco roto para los títulos */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los inputs y textarea */
+input[type="text"], textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 2px solid #4C0000; /* Rojo oscuro para los bordes */
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px; /* Tamaño fijo para el área de texto */
+  resize: none; /* Evitar el redimensionamiento */
+}
+
+input[type="text"]:focus, textarea:focus, select:focus {
+  border-color: #4CAF50; /* Verde hoja para el foco */
+}
+
+/* Mensaje de límite de caracteres */
+.character-limit {
+  display: block;
+  font-size: 0.8rem;
+  color: #FFA07A;
+  margin-top: -5px;
+}
+
+/* Botón de enviar */
+button {
+  background-color: #4CAF50; /* Verde hoja */
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-top: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #388E3C; /* Verde más oscuro */
+}
+
+/* Lista de experiencias */
+.experiencia-list {
+  background-color: #4C0000; /* Rojo oscuro para el fondo */
+  color: #FAF3E0; /* Blanco roto para el texto */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 50%;
+}
+
+.experiencia-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experiencia-list li {
+  background-color: #8B0000; /* Rojo vino para cada item */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experiencia-list h3, .experiencia-list p, .experiencia-list h4 {
+  margin: 5px 0;
+}
+
+/* Mensaje de error */
+.error-message {
+  color: #ff4c4c;
+  font-weight: bold;
+  margin-top: 10px; /* Ajuste de margen superior */
+}

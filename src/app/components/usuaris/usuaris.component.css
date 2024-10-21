@@ -1,0 +1,157 @@
+/* Contenedor general */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Estilo del contenedor del formulario */
+.form-container {
+  background-color: #8B0000; /* Rojo vino */
+  color: #FAF3E0; /* Blanco roto */
+  padding: 30px;
+  border-radius: 15px;
+  width: 45%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario (h1) */
+.form-container h1 {
+  font-size: 2.2rem; /* Aumentar el tamaño de letra a 2.2rem */
+  color: #FAF3E0; /* Blanco roto */
+  margin-bottom: 20px;
+}
+
+/* Título de la lista de usuarios (h2) */
+.lista-usuarios h2 {
+  font-size: 2.2rem; /* Aumentar el tamaño de letra a 2.2rem */
+  color: #FAF3E0; /* Blanco roto */
+  margin-bottom: 20px;
+}
+
+/* Estilo general de etiquetas y entradas */
+label {
+  font-size: 1.1rem; /* Aumentar tamaño de letra de las etiquetas */
+  color: #FAF3E0; /* Blanco roto */
+  margin-bottom: 5px;
+  display: block; /* Asegurar que las etiquetas estén en su propia línea */
+}
+
+/* Campos de texto y área de texto */
+input, textarea {
+  padding: 12px;
+  border: 1px solid #4C0000; /* Rojo oscuro */
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-right: 10px; /* Margen a la derecha para separar del contenedor */
+  box-sizing: border-box; /* Incluir padding y borde dentro del ancho */
+}
+
+/* Botón del formulario */
+.submit-button {
+  background-color: #4CAF50; /* Verde hoja */
+  color: #FAF3E0;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #388E3C; /* Verde más oscuro */
+}
+
+/* Estilo de la lista de usuarios */
+.lista-usuarios {
+  background-color: #4C0000; /* Rojo oscuro */
+  color: #FAF3E0; /* Blanco roto */
+  padding: 30px;
+  border-radius: 15px;
+  width: 45%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Elementos de la lista */
+.lista-usuarios li {
+  background-color: #8B0000; /* Rojo vino */
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo del texto de la información de usuarios */
+.user-info strong {
+  font-size: 1.5rem; /* Aumentar el tamaño de la letra */
+  color: #FAF3E0; /* Blanco roto */
+}
+
+.user-details {
+  font-size: 1.2rem; /* Aumentar el tamaño del texto de los detalles */
+}
+
+.user-details p {
+  margin: 5px 0;
+}
+
+/* Contenedor de botones en la lista */
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botones */
+button {
+  padding: 5px 10px; /* Reducir el tamaño de padding de los botones */
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem; /* Reducir el tamaño de la letra de los botones */
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Botón de mostrar detalles (verde claro) */
+button.mostrar-detalles {
+  background-color: #4CAF50; /* Verde claro */
+}
+
+button.mostrar-detalles:hover {
+  background-color: #66BB6A; /* Más claro al hacer hover */
+}
+
+/* Botón de eliminar (verde oscuro) */
+button.eliminar {
+  background-color: #388E3C; /* Verde más oscuro */
+}
+
+button.eliminar:hover {
+  background-color: #2E7D32; /* Más oscuro al hacer hover */
+}
+
+/* Botón de modificar (verde caqui) */
+button.modificar {
+  background-color: #808000; /* Verde caqui */
+}
+
+button.modificar:hover {
+  background-color: #6B8E23; /* Más oscuro al hacer hover */
+}
+/* Botón de leer más/leer menos igual al de mostrar detalles */
+button.leer-mas {
+  background-color: #4CAF50; /* Verde claro */
+}
+
+button.leer-mas:hover {
+  background-color: #66BB6A; /* Más claro al hacer hover */
+}
+

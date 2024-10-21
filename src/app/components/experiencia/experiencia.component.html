@@ -1,0 +1,54 @@
+<div class="container">
+  <!-- Formulario para crear una nueva experiencia -->
+  <div class="experiencia-form">
+    <h2>Crear Nueva Experiencia</h2>
+    <form (ngSubmit)="addExperienceToUser()">
+      <div class="form-group">
+        <label for="owner">Propietario:</label>
+        <select id="owner" [(ngModel)]="newExperience.owner" name="owner" required>
+          <option *ngFor="let user of users" [value]="user._id">
+            {{ user.name }}
+          </option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="participants">Participantes:</label>
+        <select id="participants" [(ngModel)]="selectedParticipants" name="participants" multiple>
+          <option *ngFor="let user of users" [value]="user._id">
+            {{ user.name }}
+          </option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="description">Descripción:</label>
+        <textarea id="description" [(ngModel)]="newExperience.description" name="description" required maxlength="300"></textarea>
+        <small class="character-limit">Máximo 300 caracteres</small>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    <!-- Mensaje de error debajo del formulario -->
+    <div class="error-message" *ngIf="errorMessage">
+      {{ errorMessage }}
+    </div>
+  </div>
+
+  <!-- Lista de experiencias -->
+  <div class="experiencia-list">
+    <h1>Lista de Experiencias</h1>
+    <ul>
+      <li *ngFor="let experiencia of experiencias">
+        <h3>Propietario: {{ getUserNameById(experiencia.owner) }}</h3>
+        <!-- <p>Descripción: {{ experiencia.description | truncate: 60}}</p> -->
+        <p>Descripción: {{ experiencia.description}}</p>
+        <h4>Participantes:</h4>
+        <ul>
+          <li *ngFor="let participant of experiencia.participants">
+            {{ getUserNameById(participant) }}
+          </li>
+        </ul>
+        <!-- Botón para eliminar la experiencia -->
+        <button *ngIf="experiencia._id !== undefined" (click)="deleteExperience(experiencia._id)">Eliminar</button>
+      </li>
+    </ul>
+  </div>
+</div>
